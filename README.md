@@ -1,0 +1,78 @@
+# Taskcore Management Application (End-to-End Workspace)
+
+An end-to-end task management web application demonstrating full-stack engineering. Built with a Node.js + Express backend, JSON-file datastore persistence, and a modern, fully responsive React frontend integrating Bootstrap structures with Material UI components.
+
+---
+
+## 🚀 Key Features Offered
+
+- **Node.js + Express REST API Backend**: Full CRUD (Create, Read, Update, Delete) capability with files persisted in `tasks.json`.
+- **Integrated React Client Module**: Direct Axios interaction calling relative API endpoints.
+- **Adaptive Bootstrap Structure**: A responsive navbar complete with real-time interactive performance tracking and fluid column grid systems.
+- **Rich Material UI Controls**: Material Design tables for lists, select controls, checkboxes, and modal dialogs.
+- **Enhanced UI/UX Feedback**: Interactive Snackbar elements notifying users upon successful operations.
+- **Color-Coded Priority Badges**: Priority pulses calling attention to Critical High tasks, Warnings for Medium, and relaxed Info styles for Low.
+- **Full-Text Searches & Dynamic Filters**: Live search filter for title or description matching, combined with interactive Priority & Status select toggles.
+
+---
+
+## 📂 Project Architecture
+
+```
+task-management-app/
+│
+├── backend/
+│   ├── data/
+│   │   └── tasks.json             # Local database file
+│   ├── routes/
+│   │   └── taskRoutes.js          # CRUD endpoint routers
+│   ├── controllers/
+│   │   └── taskController.js      # Core filesystem query business logic
+│   ├── package.json               # Backend setup settings
+│   ├── server.js                  # Integrated express runner
+│   └── .gitignore
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html             # HTML entry template mirror
+│   ├── src/
+│   │   ├── components/            # Material UI & Bootstrap view systems
+│   │   │   ├── TaskList.jsx
+│   │   │   ├── TaskForm.jsx
+│   │   │   ├── TaskModal.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   └── TaskStatus.jsx
+│   │   ├── services/
+│   │   │   └── taskService.js     # Axios API service proxy
+│   │   ├── pages/
+│   │   │   └── Home.jsx          # States coordinator & snackbars
+│   │   ├── App.js                 # Central wrapper containing bootstrap stylesheet
+│   │   ├── index.js               # Reactive client-mount
+│   │   └── App.css                # Layout and transition stylings
+│   ├── package.json
+│   └── .gitignore
+│
+├── README.md                      # Documentation file
+└── .gitignore                     # Root exclusions file
+```
+
+---
+
+## 🔌 API Documentation (JSON Interface)
+
+The backend Express controller mounts endpoints under `/api/tasks` and `/tasks`:
+
+| Method | Endpoint | Description | Payload Schema |
+|--------|----------|-------------|----------------|
+| **GET** | `/api/tasks` | Returns list of all stored tasks | *None* |
+| **POST** | `/api/tasks` | Inserts a new task and updates disk | `{ "title": "...", "description": "...", "priority": "high/medium/low" }` |
+| **PUT** | `/api/tasks/:id` | Patches properties or toggles status | `{ "title": "...", "description": "...", "priority": "...", "completed": true }` |
+| **DELETE** | `/api/tasks/:id` | Deletes a task from memory and files | *None* |
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+- **Frontend**: React 19, Axios, Material UI (MUI v5/v6), Emotion Styled Engine, Bootstrap 5 CSS Grid Components, Lucide Icons, Roboto Typography font.
+- **Backend**: Node.js, Express, Filesystem (fs/promises) async databases.
+- **Bundling & Server Runtime**: Vite 6, tsx (TypeScript execute runner), esbuild compiler.

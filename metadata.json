@@ -1,0 +1,6 @@
+{
+  "name": "Task Management App",
+  "description": "A comprehensive task management system with a robust Node.js and Express backend and a fully responsive, styled React frontend featuring Bootstrap and Material UI components.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

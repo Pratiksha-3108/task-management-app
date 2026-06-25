@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2",
+    "title": "Design application architecture",
+    "description": "Layout routes and controller layers for the backend and write task interfaces.",
+    "completed": true,
+    "priority": "medium"
+  },
+  {
+    "id": "3",
+    "title": "Integrate Bootstrap & Material UI",
+    "description": "Form controls should hook into MUI elements, and containers structured via Bootstrap.",
+    "completed": false,
+    "priority": "high"
+  },
+  {
+    "id": "4",
+    "title": "Draft project documentation",
+    "description": "Create a clear README explaining endpoints and local setup instructions.",
+    "completed": false,
+    "priority": "low"
+  },
+  {
+    "id": "1782381378826",
+    "title": "Updated Task",
+    "description": "Updated using Postman",
+    "completed": true,
+    "priority": "medium"
+  }
+]

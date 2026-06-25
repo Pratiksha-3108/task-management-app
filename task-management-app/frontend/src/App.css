@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #e2e8f0;
+  background-color: #0A0A0B;
+}
+
+/* Strikethrough for completed tasks */
+.task-completed-title {
+  text-decoration: line-through;
+  color: #64748b;
+  transition: all 0.3s ease;
+}
+
+/* Progress bar transitions */
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #1c1c1f;
+}
+
+/* Custom shadow & layout overrides */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
